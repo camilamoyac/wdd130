@@ -50,8 +50,9 @@ aside{
 
 aside h2{
     position: absolute;
-    left: 115px;
-
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 aside img{
