@@ -8,7 +8,8 @@
     --secondary-color: #1D1A05;
     --transparent-secondary: #1D1A05BF;
     --accent1-color: #54A49E;
-    --accent2-color: #FFFFC5BF;
+    --accent2-color: #FFFFC5;
+    --transparent-accent2: #FFFFC5BF;
     --text-width: 70%;
 }
 
@@ -52,7 +53,7 @@ article {
     position: absolute;
     left: 15%;
     top: 65%;
-    background-color:var(--accent2-color);
+    background-color:var(--transparent-accent2);
 }
 article img {
     width: 200px;
@@ -64,7 +65,7 @@ article img {
 }
 
 section img {
-    width: 500px;
+    width: 400px;
     margin: 5px;
     border: 2px solid var(--accent1-color);
     padding: 0;
