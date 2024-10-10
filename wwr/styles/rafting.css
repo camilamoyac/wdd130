@@ -13,9 +13,9 @@
     --text-width: 70%;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 35%;
+    top: 30%;
     font-family: "Calistoga", serif;
     font-weight: 400;
     color: var(--primary-color);
@@ -41,18 +41,21 @@ p {
     font-size: larger;
 }
 
-div img {
+.hero div{
     position: relative;
+}
+
+div img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-article {
+.hero article {
     width: var(--text-width);
     position: absolute;
     left: 15%;
-    top: 65%;
+    top: 55%;
     background-color:var(--transparent-accent2);
 }
 article img {
