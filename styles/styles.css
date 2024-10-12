@@ -84,6 +84,9 @@ aside img{
 footer{
     margin-top: 20px;
     border-top: 1px dotted black;
+}
+
+footer p{
     text-align: center;
 }
 
