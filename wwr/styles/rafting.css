@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
 }
 
 :root {
@@ -11,6 +13,33 @@
     --accent2-color: #FFFFC5;
     --transparent-accent2: #FFFFC5BF;
     --text-width: 70%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    grid-column: 1/2;
+    margin: 0 auto;
+}
+
+header nav {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--transparent-accent2);
+    border: 2px dashed var(--primary-color);
+    margin: 30px;
+}
+
+header a {
+    text-align: center;
+    font-size: larger;
 }
 
 .hero h1 {
@@ -34,9 +63,7 @@ h2 {
 }
 
 p {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    padding: 1rem;
+    padding: 10px;
     color: var(--secondary-color);
     font-size: larger;
 }
@@ -67,14 +94,68 @@ article img {
     padding: 0;
 }
 
-section img {
+.history {
+    background-color: var(--transparent-accent2);
+    border: 2px dashed var(--primary-color);
+    margin: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    
+}
+
+.grid-container img {
     width: 400px;
-    margin: 5px;
+    height: auto;
+    border: 2px solid var(--accent1-color);
+    margin: 0;
+}
+
+.adventure img {
+    width: 400px;
     border: 2px solid var(--accent1-color);
     padding: 0;
 }
-section p {
-    width: var(--text-width);
-    margin: 0 auto;
-    text-align: justify;
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 2px dashed var(--primary-color);;
+}
+
+footer p {
+    text-align: center;
+    grid-column: 2/3;
+}
+
+footer nav {
+    display: flex;
+    justify-content: end;
+    grid-column: 3/4;
+}
+
+.foot img {
+    margin: 10px;
 }
