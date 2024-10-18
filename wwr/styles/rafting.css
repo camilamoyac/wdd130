@@ -8,8 +8,8 @@
 :root {
     --primary-color: #E1882C;
     --secondary-color: #1D1A05;
-    --transparent-secondary: #1D1A05BF;
-    --accent1-color: #54A49E;
+    --transparent-secondary: #1D1A05E6;
+    --accent1-color: #3E7977;
     --accent2-color: #FFFFC5;
     --transparent-accent2: #FFFFC5BF;
     --text-width: 70%;
@@ -20,7 +20,7 @@ header {
     grid-template-columns: 40% 50% 10%;
 }
 
-header img {
+header img {            /*logo*/
     width: 200px;
     height: auto;
     grid-column: 1/2;
@@ -42,18 +42,6 @@ header a {
     font-size: larger;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 30%;
-    font-family: "Calistoga", serif;
-    font-weight: 400;
-    color: var(--primary-color);
-    padding: 1rem;
-    background-color: var(--transparent-secondary);
-    width: 100%;
-    text-align: center;
-}
-
 h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
@@ -72,22 +60,33 @@ p {
     position: relative;
 }
 
-div img {
+.hero img {          /*big hero image*/
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero article {
-    width: var(--text-width);
+.hero h1 {
     position: absolute;
+    top: 30%;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    color: var(--primary-color);
+    padding: 1rem;
+    background-color: var(--transparent-secondary);
+    width: 100%;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    width: var(--text-width);
     left: 15%;
     top: 55%;
     background-color:var(--transparent-accent2);
 }
-article img {
-    width: 200px;
-    height: auto;
+article img {       /*small image in yellow article*/
+    max-width: 200px;
     float: right ;
     margin: 1rem;
     border: 2px solid var(--primary-color);
@@ -107,17 +106,11 @@ article img {
     
 }
 
-.grid-container img {
+.grid-container img {   /*image between history paragraphs*/
     width: 400px;
     height: auto;
     border: 2px solid var(--accent1-color);
     margin: 0;
-}
-
-.adventure img {
-    width: 400px;
-    border: 2px solid var(--accent1-color);
-    padding: 0;
 }
 
 .adventure-gallery {
@@ -133,10 +126,12 @@ figure {
     margin: 0;
 }
 
-figure img {
+figure img {          /*images in adventure gallery*/
     width: 100%;
     max-width: 300px;
     height: auto;
+    border: 2px solid var(--accent1-color);
+    padding: 0;
 }
 
 footer {
@@ -156,6 +151,6 @@ footer nav {
     grid-column: 3/4;
 }
 
-.foot img {
+.foot img {       /*social media icons*/
     margin: 10px;
 }
