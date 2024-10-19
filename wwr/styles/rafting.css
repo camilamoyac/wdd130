@@ -8,7 +8,7 @@
 :root {
     --primary-color: #E1882C;
     --secondary-color: #1D1A05;
-    --transparent-secondary: #1D1A05E6;
+    --transparent-secondary: #1d1a05e0;
     --accent1-color: #3E7977;
     --accent2-color: #FFFFC5;
     --transparent-accent2: #FFFFC5BF;
@@ -49,7 +49,8 @@ h1 {
     font-weight: 400;
     color: var(--primary-color);
     padding: 1rem;
-    text-align: center;
+    text-align: center;  
+    background-color: var(--transparent-secondary);
 }
 
 h2 {
@@ -225,11 +226,11 @@ input[type="checkbox"]{
 .form-item.column1 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem; /* Vertical space between radio buttons */
+    gap: 0.5rem;
 }
 
 .form-item.column1 input[type="radio"] {
-    margin-right: 0.5rem; /* Space between radio button and label */
+    margin-right: 0.5rem;
 }
 
 .form-item.column1 label {
@@ -238,8 +239,8 @@ input[type="checkbox"]{
 
 .form-item.checkbox-container {
     display: inline-flex;
-    align-items: center; /* Ensures checkbox and label are vertically aligned */
-    gap: 0.5rem; /* Adds a bit of spacing between checkbox and label */
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .form-item.column1 label {
