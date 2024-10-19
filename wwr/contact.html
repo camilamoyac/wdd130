@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This page provides a form for the user to contact The Raft.">
+    <meta name="author" content="Camila Moya Casanova">
+
+    <title>The Raft | Contact Us</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img width="150" src="images/the-raft-logo.png"
+            alt="Inflatable orange raft with water splashes with bold orange 'The Raft' text on top">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="border">
+            <h2>Company Info</h2>
+            <div class="double-columns">
+                <section>
+                    <p>Horseshoe Bend, Arizona 86040, USA</p>
+                    <p>+1 (480) 555-1234</p>
+                    <p>contact.us@theraft.com</p>
+                </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102128.56593992458!2d-111.502466!3d36.877962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87346ced52b21091%3A0xb623646960566829!2sHorseshoe%20Bend!5e0!3m2!1sen!2scl!4v1729349381869!5m2!1sen!2scl"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <h2>Our Staff</h2>
+        <div class="triple-columns">
+            <figure>
+                <img width="600" src="images/employee1.jpg" alt="Woman siling with two thumbs up.">
+                <figcaption>Shirley E. Campbell - CEO and Founder</figcaption>
+            </figure>                <figure>
+                <img width="600" src="images/employee3.jpg" alt="Man wearing helmet smiling.">
+                <figcaption>Mark J. Shuffler - Lifeguard</figcaption>
+            </figure>
+            <figure>
+                <img width="600" src="images/employee2.jpg" alt="Young woman smiling on a raft.">
+                <figcaption>Lisa J. Woods - Rafting Instructor</figcaption>
+            </figure>
+        </div>
+        <section>
+            <h2>Contact Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="useremail">Email Address:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message Information</legend>
+                    <p>Purpose:</p>
+                    <div class="form-item column1">
+                        <div>
+                            <input type="radio" id="inquiry" name="purpose">
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="purpose">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="purpose">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                    <div class="form-item textarea">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="7" placeholder="I have a question about..."></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-item checkbox-container">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="foot">
+        <p>©2024 | The Raft | Camila Moya Casanova</p>
+        <a href="https://app.moqups.com/KcJdRmMtRemtIu0V9bnFVGnXNWxRT7Mj/view/page/ad64222d5?ui=0" target=”_blank”>Contact Us wireframe</a>
+        <nav>
+            <a href="https://www.instagram.com/">
+                <img width="50" src="images/instagram_icon.png" alt="Instagram logo.">
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img width="50" src="images/tiktok_icon.png" alt="Tiktok logo.">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img width="50" src="images/facebook-icon.png" alt="Facebook logo.">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

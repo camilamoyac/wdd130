@@ -13,6 +13,8 @@
     --accent2-color: #FFFFC5;
     --transparent-accent2: #FFFFC5BF;
     --text-width: 70%;
+    --content-border: 2px dashed var(--primary-color);
+    --image-border: 2px solid var(--accent1-color);
 }
 
 header {
@@ -33,7 +35,7 @@ header nav {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--transparent-accent2);
-    border: 2px dashed var(--primary-color);
+    border: var(--content-border);
     margin: 30px;
 }
 
@@ -46,7 +48,7 @@ h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     color: var(--accent1-color);
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -85,35 +87,36 @@ p {
     top: 55%;
     background-color:var(--transparent-accent2);
 }
-article img {       /*small image in yellow article*/
+article img{       /*small image in yellow article*/
     max-width: 200px;
     float: right ;
     margin: 1rem;
-    border: 2px solid var(--primary-color);
+    border: var(--image-border);
     padding: 0;
 }
 
-.history {
+.history, .border{
     background-color: var(--transparent-accent2);
-    border: 2px dashed var(--primary-color);
+    border: var(--content-border);
     margin: 30px;
+    padding: 1rem;
 }
 
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     
 }
 
-.grid-container img {   /*image between history paragraphs*/
+.grid-container img{   /*image between history paragraphs*/
     width: 400px;
     height: auto;
-    border: 2px solid var(--accent1-color);
+    border: var(--image-border);
     margin: 0;
 }
 
-.adventure-gallery {
+.adventure-gallery, .double-columns, .triple-columns{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -121,36 +124,163 @@ article img {       /*small image in yellow article*/
     margin: 30px 0;
 }
 
-figure {
+figure{
     text-align: center;
     margin: 0;
 }
 
-figure img {          /*images in adventure gallery*/
+figure img{          /*images in adventure gallery*/
     width: 100%;
     max-width: 300px;
     height: auto;
-    border: 2px solid var(--accent1-color);
+    border: var(--image-border);
     padding: 0;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-top: 2px dashed var(--primary-color);;
+.double-columns p{
+    font-weight: bold;
 }
 
-footer p {
+iframe{
+    width: 600px;
+    height: 300px;
+    padding: 0;
+    border: var(--image-border);
+}
+
+.triple-columns img{
+    width: 600px;
+    height: auto;
+}
+
+form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: var(--content-border);
+    border-radius: 0.5rem;
+    background-color: var(--transparent-accent2);
+    display: grid;
+}
+
+form p{
+    font-size: medium;
+    margin: 0;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: var(--image-border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+legend{
+    font-weight: bold;
+    font-size: larger;
+    color: var(--accent1-color);
+}
+
+.column2 label{
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.column1 label, input[type="radio"] label{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+input, textarea{
+    padding: 0.5rem;
+    font-size: large;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.form-item.column1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem; /* Vertical space between radio buttons */
+}
+
+.form-item.column1 input[type="radio"] {
+    margin-right: 0.5rem; /* Space between radio button and label */
+}
+
+.form-item.column1 label {
+    display: inline-block;
+}
+
+.form-item.checkbox-container {
+    display: inline-flex;
+    align-items: center; /* Ensures checkbox and label are vertically aligned */
+    gap: 0.5rem; /* Adds a bit of spacing between checkbox and label */
+}
+
+.form-item.column1 label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.column2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+}
+
+.textarea label{
+    text-align: left;
+}
+
+button{
+    width: 200px;
+    margin: 0 auto;
+    background-color:#fddcbc;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: large;
+    padding: 0.5rem;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: var(--content-border);
+    margin: 1rem;
+}
+
+footer p{
     text-align: center;
     grid-column: 2/3;
 }
 
-footer nav {
+footer nav{
     display: flex;
     justify-content: end;
     grid-column: 3/4;
 }
 
-.foot img {       /*social media icons*/
+.foot img{       /*social media icons*/
     margin: 10px;
 }
