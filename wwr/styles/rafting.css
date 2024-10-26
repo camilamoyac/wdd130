@@ -68,6 +68,10 @@ p, a {
     font-size: larger;
 }
 
+a{
+    font-weight: bold;
+}
+
 a:hover {
     color: var(--accent1-color);
     font-weight: bold;
@@ -103,7 +107,7 @@ a:hover {
     background-color:#fddcbc;
     border: 2px solid var(--primary-color);
     border-radius: 0.5rem;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
@@ -200,8 +204,8 @@ form p{
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr ;
     grid-template-rows: 1fr 0.6fr ;
-    background-color: var(--transparent-accent2);
     align-items: center;
+    margin: 30px;
 }
 
 .home-gallery figure{
@@ -355,7 +359,74 @@ h3, h4{
 .trip-layout{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+    margin: 70px;
+    text-align: justify;
+}
+
+.trip-layout img{
+    border: var(--image-border);
+    width: 300px;
+}
+
+.aside{
+    grid-column: 2/3;
+    order: 1;
+}
+
+.aside img{
+    position: relative;
+    width: 100%;
+}
+
+.aside h2, .aside p{
+    color: var(--accent2-color);
+}
+
+.column{
+    position: absolute;
+    width: 400px;
+    top: 45%;
+    right: 7%;
+}
+
+.contact .button{
+    position: absolute;
+    width: 200px;
+    background-color:#fddcbc;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    right: 30%;
+    bottom: 15%;
+}
+
+.contact{
+    position: relative;
+    margin-top: 70px;
+    border: var(--content-border);
+    background-color: var(--transparent-accent2);
+    padding-bottom: 180px;
+}
+
+.main{
+    grid-column: 1/2;
+    order: 0;
+    margin-right: 2rem;
+}
+
+.row1 img, .row3 img{
+    float: left;
+    padding: 0;
+    margin: 1rem;
+}
+
+.row2 img{
+    float: right;
+    padding: 0;
+    margin: 1rem;
 }
 
 footer{
