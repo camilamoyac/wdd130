@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #9aab89;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    padding: 20px;
+}
+
+h1{
+    margin: 10px auto;
+    color: #9aab89;
+}
+
+img{
+    border: 1px solid #9aab89;
+    padding: 1px;
+}
+
+p{
+    font-size: large;
+    padding: 10px;
+}
+
+section{
+    margin: 10px auto;
+    background-color: #FEFBEA;
+    border: 1px solid #9aab89;
+    padding: 1px;
+}
+
+aside{
+    margin: 10px auto;
+}
+
+a{
+    font-size: large;
+}
